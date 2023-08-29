@@ -16,10 +16,10 @@ const BottomMenu = () => {
       </div>
       <div className="flex flex-row gap-6 md:gap-4 items-center">
         <Button title="Login" type="border" />
-        <a className="w-10">
+        <a className="w-10" href={import.meta.env.VITE_TELEGRAM_ADDRESS} target="_blank" rel="noopener noreferrer">
           <img src="/media/img/Group-427319675.png" />
         </a>
-        <a className="w-8">
+        <a className="w-8" href={import.meta.env.VITE_TWITTER_ADDRESS} target="_blank" rel="noopener noreferrer">
           <img src="/media/img/iconmonstr-twitter-1-8-1.png" />
         </a>
       </div>

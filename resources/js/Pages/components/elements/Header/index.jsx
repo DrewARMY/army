@@ -23,7 +23,9 @@ const Header = () => {
             Contract Address: 0x456815812b3129a4389ea4d73e9706697cc91373
           </span>
           <div className="flex flex-row gap-8">
+          <a href={import.meta.env.VITE_TWITTER_ADDRESS} target="_blank" rel="noopener noreferrer">
             <Button title="Twitter" type="primary" />
+          </a>
             <Button title="Chart" type="border" />
           </div>
         </div>
