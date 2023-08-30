@@ -1,11 +1,16 @@
 import { Button } from "../../commons";
 import TopMenu from "../TopMenu";
 
+const backgroundImageUrl = import.meta.env.VITE_URL+'/media/svg/Line-3.svg';
+
 const Header = () => {
   return (
     <div className="mx-auto md:mb-10 mt-2 flex flex-col">
       <TopMenu />
-      <div className="flex flex-row justify-between mt-28 md:mt-20 xs:mt-14 md:flex-col bg-[url('http://127.0.0.1:8000/media/svg/Line-3.svg')]  bg-[length:1000px] bg-no-repeat w-full items-center bg-center">
+      <div 
+        className="flex flex-row justify-between mt-28 md:mt-20 xs:mt-14 md:flex-col bg-cover bg-center bg-no-repeat w-full items-center"
+        style={{ backgroundImage: `url('${backgroundImageUrl}')`, height: '1000px'}}
+      >
         <div className="flex-1 flex flex-col">
           <span className="text-white font-bold text-4xl ">
             The all-in-one solution on Shibarium L2 for
