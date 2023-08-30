@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-content: [
+  mode : 'jit',
+  content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.jsx",
   ],
