@@ -22,7 +22,9 @@ const TopMenu = () => {
 
       <div className="flex flex-row gap-6 lg:hidden md:hidden sm:hidden">
         <Button title="Connect Now" type="border" />
-        <Button title="Telegram" type="primary" />
+        <a href={import.meta.env.VITE_TELEGRAM_ADDRESS} target="_blank" rel="noopener noreferrer">
+          <Button title="Telegram" type="primary" />
+        </a>
       </div>
 
       <div className="hidden lg:flex  lg:flex-col  lg:justify-between sm:flex  sm:flex-col  sm:justify-between w-full md:flex  md:flex-col  md:justify-between">
